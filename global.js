@@ -1,0 +1,1 @@
+var composer = new SkinComposer(document.getElementById("skinComposer"));

@@ -1,0 +1,149 @@
+canvas {
+    image-rendering: optimizeSpeed;             /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;                 /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+canvas.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+#skinComposer {
+    display: flex;
+}
+
+.left-column img {
+    width: 64px;
+}
+
+.left-column ul {
+    list-style: none;
+}
+
+.left-column ul {
+    padding-left: 0;
+}
+
+.left-column ul ul {
+    display: none;
+    padding-left: 15px;
+}
+
+.directory-label {
+    padding-left: 32px;
+    background-image: url(/assets/folder-icon.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 21px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    display: block;
+}
+
+.left-column, .right-column {
+    width: 30%;
+    display: flex;
+}
+
+.central-column {
+    width: 40%;
+    text-align: center;
+}
+
+.layers-container ul {
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.layers-container li {
+    padding: 15px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.layers-container {
+    padding-left: 15px;
+    border-left: 1px solid rgba(0,0,0,0.14);
+    width: 100%;
+}
+
+.left-column {
+    border-right: 1px solid rgba(0,0,0,0.14);
+}
+
+.left-column > ul {
+    max-height: 600px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.part-wrapper img {
+    vertical-align: middle;
+}
+
+.part-infos {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.choosed-part-label {
+    display: block;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-part {
+    font-size: 0;
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/delete.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+}
+
+.pickr {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.pickr .pcr-button {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0;
+}
+
+.add-part {
+    margin-left: 5px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    width: 24px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    color: #fff!important;
+    text-decoration: none;
+    background-color: #e0bf35;
+}
