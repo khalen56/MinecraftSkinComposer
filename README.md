@@ -1,5 +1,7 @@
 # MinecraftSkinComposer
 
+[Demo](http://esperia-rp.net/skindemo/)
+
 A simple browser application that allows you to compose a minecraft skin using parts of skins.
 
 All you need are images to composer the skin and a JSON file / JSON endpoint returning the list of available parts with this format :
